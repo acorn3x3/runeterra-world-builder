@@ -31,17 +31,17 @@
         <main>
             <label
                 >Name
-                <input id="name" />
+                <input id="name" value="Encounter" />
             </label>
 
             <label> Champion </label>
             <select id="champion-select">
-                <option value="Aatrox">Aatrox</option>
-                <option value="Belveth">Belveth</option>
-                <option value="Cassiopeia">Cassiopeia</option>
-                <option value="Draven">Draven</option>
-                <option value="Echo">Echo</option>
-                <option value="Garen">Garen</option>
+                <option value="aatrox">Aatrox</option>
+                <option value="belveth">Belveth</option>
+                <option value="cassiopeia">Cassiopeia</option>
+                <option value="draven">Draven</option>
+                <option value="echo">Echo</option>
+                <option value="garen">Garen</option>
             </select>
             <label> City Builder</label>
             <select id="city-select">
@@ -52,6 +52,21 @@
                 <option value="Immortal Bastion">Immortal Bastion</option>
                 <option value="Zaun">Zaun</option>
             </select>
+
+            <label> Add Description </label>
+            <div class="add-adj">
+                <input id="adj-input" />
+                <button id="add-adj-button"></button>
+            </div>
+
+            <article id="user-article" class="demacia">
+                <h1 id="encounter-header">Battle</h1>
+                <img id="user-champion" src="assets/garen.jpg" />
+                <div class-="adjs">
+                    <h2>Description</h2>
+                    <ul id="adjs-list"></ul>
+                </div>
+            </article>
         </main>
     </body>
 </html>
