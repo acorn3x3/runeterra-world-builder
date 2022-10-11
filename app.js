@@ -15,8 +15,8 @@ const userCity = document.getElementById('user-city');
 
 /* State */
 let encounter = {
-    name: 'Encounter',
-    champion: 'aatrox',
+    name: 'Encounter Name *change me!*',
+    champion: 'garen',
     city: 'demacia',
     adjs: [],
 };

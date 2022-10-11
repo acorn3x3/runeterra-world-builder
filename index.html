@@ -29,9 +29,9 @@
         </header>
 
         <main>
-            <label
-                >Name
-                <input id="name" value="Encounter" />
+            <label>
+                <input id="name" value="" placeholder="name the battle" />
+                <button id="name-button">submit</button>
             </label>
 
             <label> Champion </label>
@@ -40,7 +40,7 @@
                 <option value="belveth">Belveth</option>
                 <option value="cassiopeia">Cassiopeia</option>
                 <option value="draven">Draven</option>
-                <option value="echo">Echo</option>
+                <option value="ekko">Ekko</option>
                 <option value="garen">Garen</option>
             </select>
             <label> City </label>
@@ -53,19 +53,27 @@
                 <option value="zaun">Zaun</option>
             </select>
 
-            <label> Add Description </label>
+            <label>Describe the scene! </label>
             <div class="add-adj">
-                <input id="adj-input" />
-                <button id="add-adj-button"></button>
+                <input id="adj-input" placeholder="describe the battle!" />
+                <button id="add-adj-button">describe</button>
             </div>
 
             <article id="user-article" class="demacia">
-                <h1 id="encounter-header">Battle</h1>
-                <img id="user-champion" src="" />
-                <img id="user-city" src="assets/.jpg" />
+                <h1>Battle of</h1>
+                <h1 id="encounter-header"></h1>
+                <div class="container">
+                    <div class="champion-box">
+                        <img id="user-champion" src="" />
+                    </div>
+                    <div class="city-box">
+                        <img id="user-city" src="" />
+                    </div>
+                </div>
+
+                <img id="user-city" src="" />
                 <div class-="adjs">
-                    <h1>Battle of</h1>
-                    <h2>Description</h2>
+                    <h2>Description box!</h2>
                     <ul id="adjs-list"></ul>
                 </div>
             </article>
