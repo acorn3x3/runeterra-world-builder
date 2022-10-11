@@ -1,39 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <!-- metadata -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-<head>
-    <!-- metadata -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <!-- title and favicon -->
+        <title>Web App</title>
+        <link rel="icon" type="image/x-icon" href="assets/alchemy-favicon.png" />
 
-    <!-- title and favicon -->
-    <title>Web App</title>
-    <link rel="icon" type="image/x-icon" href="assets/alchemy-favicon.png" />
+        <!-- js -->
+        <script type="module" src="app.js"></script>
 
-    <!-- js -->
-    <script type="module" src="app.js"></script>
+        <!-- fonts -->
+        <!-- see https://fonts.google.com/ -->
 
-    <!-- fonts -->
-    <!-- see https://fonts.google.com/ -->
+        <!-- css -->
+        <link rel="stylesheet" href="styles/reset.css" />
+        <link rel="stylesheet" href="styles/global.css" />
+        <!-- add link for page specific css -->
+    </head>
 
-    <!-- css -->
-    <link rel="stylesheet" href="styles/reset.css" />
-    <link rel="stylesheet" href="styles/global.css" />
-    <!-- add link for page specific css -->
+    <body>
+        <header>
+            <img class="logo" src="assets/html_css_js.png" alt="logo" />
+            <h1>Battle Builder</h1>
+        </header>
 
-</head>
+        <main>
+            <label>
+                <input id="name" value="" placeholder="name the battle" />
+                <button id="name-button">submit</button>
+            </label>
 
-<body>
-    <header>
-        <img class="logo" src="assets/html_css_js.png" alt="logo">
-        <h1>Web App</h1>
-    </header>
+            <label> Champion </label>
+            <select id="champion-select">
+                <option value="aatrox">Aatrox</option>
+                <option value="belveth">Belveth</option>
+                <option value="cassiopeia">Cassiopeia</option>
+                <option value="draven">Draven</option>
+                <option value="ekko">Ekko</option>
+                <option value="garen">Garen</option>
+            </select>
+            <label> vs Champion 2 (coming soon)</label>
+            <select id="champion-select-two">
+                <option value="aatrox">Aatrox</option>
+                <option value="belveth">Belveth</option>
+                <option value="cassiopeia">Cassiopeia</option>
+                <option value="draven">Draven</option>
+                <option value="ekko">Ekko</option>
+                <option value="garen">Garen</option>
+            </select>
+            <label> City </label>
+            <select id="city-select">
+                <option value="demacia">Demacia</option>
+                <option value="shurima">Shurima</option>
+                <option value="icathia">Icathia</option>
+                <option value="bilgewater">Bilgewater</option>
+                <option value="immortalbastion">Immortal Bastion</option>
+                <option value="zaun">Zaun</option>
+            </select>
 
-    <main>
+            <article id="user-article" class="demacia">
+                <h1>Battle of</h1>
+                <h1 id="encounter-header"></h1>
+                <div class="container">
+                    <div class="champion-box">
+                        <img id="user-champion" src="" />
+                    </div>
+                    <div class="city-box">
+                        <img id="user-city" src="" />
+                    </div>
+                </div>
 
-    </main>
-
-</body>
-
+                <img id="user-city" src="" />
+                <div class-="adjs">
+                    <h2>Description box!</h2>
+                    <label>Describe the scene! </label>
+                    <div class="add-adj">
+                        <input id="adj-input" placeholder="describe the battle!" />
+                        <button id="add-adj-button">describe</button>
+                    </div>
+                    <ul id="adjs-list"></ul>
+                </div>
+            </article>
+        </main>
+    </body>
 </html>
